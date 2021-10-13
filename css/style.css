@@ -1,0 +1,150 @@
+
+html,body {
+    font-size: 10px;
+    color: rgb(71, 71, 71);
+}
+
+h1, h2, h3, p, a {
+    margin: 0;
+}
+
+.container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 1.5rem;
+}
+
+.row {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-12 {
+    
+    flex: 0 1 100%; /* один блок */
+}
+
+
+.col-6 {
+    flex: 0 1 50%; /* два блока */
+
+}
+
+.col-4 {
+    flex: 0 1 33.333%; /* три блока */
+}
+
+.col-3 {
+    flex: 0 1 25%; /* четыри блока */
+}
+
+
+.title {
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.form-wrapper {
+    padding-top: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color:#38c68b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1.6rem 2.9rem;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+    transition: background-color .4s ease 0s;
+}
+
+.button:hover { 
+    background-color: #3bd193;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-item {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    min-width: 20rem;
+    border-radius: 5px;
+    box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.35);
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+}
+
+.card-title {
+    font-size: 2.4rem;
+    padding: 2.3rem 0;
+    color: #38c68b;
+    border-bottom: 3px solid #38c68b;
+}
+
+.card-title::after {
+    content:"";
+    display: flex; 
+    width: 4rem;
+}
+
+.card-data {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.data-color {
+    color:rgb(207, 190, 38);
+}
+
+.input {
+    height: 4.5rem;
+    font-size: small;
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .card-title {
+        font-size: 2.2rem;
+}
+
+
